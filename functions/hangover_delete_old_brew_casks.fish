@@ -4,12 +4,7 @@ function hangover_delete_old_brew_casks -d "Delete older-than-the-last-installed
     return 1
   end
 
-  if not test -d /opt/homebrew-cask/Caskroom
-    echo "/opt/homebrew-cask/Caskroom does not "
-    return 1
-  end
-
-  cd /opt/homebrew-cask/Caskroom
+  cd /usr/local/Caskroom
 
   for cask in (ls | tr -d '/')
     for old_cask in (ls -t -1 $cask | tail -n +2 | tr -d '/')
