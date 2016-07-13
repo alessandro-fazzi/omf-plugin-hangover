@@ -10,6 +10,8 @@
 
 <br/>
 
+> You brewed a lot. Now it's time to get hangover.
+
 Hangover will upgrade installed brew and brew-cask software and will update the "open with".
 
 ## Install
