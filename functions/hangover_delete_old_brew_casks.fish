@@ -1,5 +1,6 @@
 function hangover_delete_old_brew_casks -d "Delete older-than-the-last-installed-version casks versions"
-  if not test "Darwin" = (uname)
+  if not test -d /usr/local/Caskroom
+    echo "/usr/local/Caskroom does not exists"
     return 1
   end
 
