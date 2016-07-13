@@ -5,6 +5,4 @@
 # * $path          package path
 # * $dependencies  package dependencies
 
-if not type -q brew
-  echo "Please install 'brew' first!"; return 1
-end
+__omf-plugin-hangover_check_if_is_brew_installed
