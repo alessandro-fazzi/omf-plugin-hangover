@@ -12,7 +12,7 @@
 
 > You brewed a lot. Now it's time to get hangover.
 
-Hangover will upgrade installed brew and brew-cask software and will update the "open with".
+Hangover will upgrade installed brew and brew-cask software, cleanup older versions and will update the "open with".
 
 ## Install
 
@@ -30,7 +30,7 @@ $ hangover
 
 # License
 
-[MIT][mit] © [{{USER}}][author] et [al][contributors]
+[MIT][mit] © [{{pioneerskies}}][author] et [al][contributors]
 
 
 [mit]:            https://opensource.org/licenses/MIT
