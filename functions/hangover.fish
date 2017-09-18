@@ -2,8 +2,10 @@ function hangover -d "Upgrade brew and brew-cask packages and clean 'open with' 
   brew update
   brew upgrade
 
-  for app in (brew cask list)
-    brew cask install $app
+  set -l OUTDATED_CASKS (brew cask outdated)
+
+  for app in $OUTDATED_CASKS
+    brew cask install --force $app
   end
 
   brew cleanup
